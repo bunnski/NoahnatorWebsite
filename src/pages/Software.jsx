@@ -7,7 +7,7 @@ function Software() {
       name: 'My Software',
       description: 'My applications and tools.',
       items: [
-        { id: 1, title: 'Floppy Painter', description: 'Floppy Painter is 2D and 3D Painting tool for general drawing and 3D painting.', bgImage: '/NoahnatorWebsite/FloppyDiskEvenWider.png', fgImage: '/NoahnatorWebsite/software-1-icon.png', url: 'https://example.com/tool1' },
+        { id: 1, title: 'Floppy Painter', description: 'Floppy Painter is 2D and 3D Painting tool for general drawing and 3D painting.', bgImage: '/FloppyDiskEvenWider.png', fgImage: '/software-1-icon.png', url: 'https://example.com/tool1' },
       ],
     },
     {
@@ -20,7 +20,7 @@ function Software() {
   return (
     <div className="software">
       <div className="banner">
-        <img src="/NoahnatorWebsite/SoftwareBanner.png" alt="Software Banner" />
+        <img src="/SoftwareBanner.png" alt="Software Banner" />
       </div>
 
       <div className="container">

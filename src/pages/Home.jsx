@@ -4,7 +4,7 @@ import './Home.css'
 
 function Home() {
   const banners = [
-    { image: '/NoahnatorWebsite/PanterBannerVideo.mp4', alt: 'Floppy Painter', width: 800, height: 400 },
+    { image: '/PanterBannerVideo.mp4', alt: 'Floppy Painter', width: 800, height: 400 },
     //{ image: '/banner-home-2.jpg', alt: 'Home Banner 2' },
     //{ image: '/banner-home-3.jpg', alt: 'Home Banner 3' },
   ]

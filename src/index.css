@@ -35,8 +35,8 @@
 @media (prefers-color-scheme: dark) {
 @font-face {
   font-family: 'CustomFont';
-  src: url('/NoahnatorWebsite/CaveatBrush-Regular.ttf') format('woff'),
-       url('/NoahnatorWebsite/CaveatBrush-Regular.ttf') format('woff');
+  src: url('/CaveatBrush-Regular.ttf') format('woff'),
+       url('/CaveatBrush-Regular.ttf') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -65,7 +65,7 @@
 
 body {
     margin: 0;
-    background-image: url('/NoahnatorWebsite/WebsiteBGPattern.png');
+    background-image: url('/WebsiteBGPattern.png');
     background-repeat: repeat;
     background-size: 64px 64px;
 }

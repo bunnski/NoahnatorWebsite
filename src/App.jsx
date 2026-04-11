@@ -12,7 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/games" element={<Games wipImage="/NoahnatorWebsite/NoahnatorLogoWarningColor.png" wipImageWidth="200px" bannerSrc="/NoahnatorWebsite/banner-games.mp4" />} />
+          <Route path="/games" element={<Games wipImage="/NoahnatorLogoWarningColor.png" wipImageWidth="200px" bannerSrc="/banner-games.mp4" />} />
           <Route path="/software" element={<Software />} />
           <Route path="/about" element={<About />} />
           <Route path="/links" element={<Links />} />
