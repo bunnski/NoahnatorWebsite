@@ -1,0 +1,81 @@
+.tilt-card {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.tilt-card:hover {
+  animation-play-state: paused;
+}
+
+.tilt-card-inner {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  will-change: transform;
+  transform-origin: center center;
+  transition: transform 0.15s ease-out, box-shadow 0.2s;
+  height: 100%;
+}
+
+.tilt-card-clickable {
+  cursor: pointer;
+}
+
+.projects-grid .tilt-card:hover .tilt-card-inner {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.projects-grid .tilt-card:hover {
+  animation-play-state: paused;
+  z-index: 1;
+}
+
+.tilt-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.tilt-card-fg {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  height: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  z-index: 1;
+}
+
+.tilt-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.25rem 1.25rem;
+  z-index: 2;
+}
+
+.tilt-card-content h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  color: var(--text-h);
+}
+
+.tilt-card-content p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

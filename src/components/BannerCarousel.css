@@ -1,0 +1,133 @@
+.banner-carousel {
+  width: 100%;
+  margin-bottom: 2rem;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  position: relative;
+  min-height: 350px;
+}
+
+.banner-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  height: 100%;
+}
+
+.banner-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banner-placeholder {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.banner-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 2;
+  line-height: 1;
+}
+
+.banner-nav:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-prev {
+  left: 0;
+}
+
+.banner-next {
+  right: 0;
+}
+
+.banner-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.banner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  padding: 0;
+}
+
+.banner-dot.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+.banner-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.banner-lock {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  z-index: 2;
+  padding: 0;
+}
+
+.banner-lock:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-lock.locked {
+  color: #fff;
+  background: rgba(170, 58, 255, 0.4);
+}
+
+.banner-lock.locked:hover {
+  background: rgba(170, 58, 255, 0.6);
+  color: #fff;
+}
