@@ -8,7 +8,7 @@ function Layout({ children }) {
     <div className="layout">
       <nav className="navbar">
         <div className="nav-brand">
-          <img src="/NoahnatorLogoColor.png" alt="" className="nav-icon" />
+          <img src="/NoahnatorWebsite/NoahnatorLogoColor.png" alt="" className="nav-icon" />
           <Link to="/">Noahnator</Link>
         </div>
         <ul className="nav-links">
