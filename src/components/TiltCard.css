@@ -17,12 +17,12 @@
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1.24 / 1;
   cursor: pointer;
   will-change: transform;
   transform-origin: center center;
   transition: transform 0.15s ease-out, box-shadow 0.2s;
-  height: 100%;
+  height: 115%;
 }
 
 .tilt-card-clickable {
@@ -41,17 +41,18 @@
 .tilt-card-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   z-index: 0;
 }
 
 .tilt-card-fg {
   position: absolute;
-  bottom: 12px;
+  bottom: 2px;
   left: 12px;
-  right: 12px;
-  height: 75%;
+  right: 0px;
+  top: 52px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
